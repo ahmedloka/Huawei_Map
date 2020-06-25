@@ -1,0 +1,30 @@
+{
+	"agcgw":{
+		"backurl":"connect-dre.dbankcloud.cn",
+		"url":"connect-dre.hispace.hicloud.com"
+	},
+	"client":{
+		"cp_id":"890020000000000769",
+		"product_id":"736430079244445097",
+		"client_id":"360711645862822976",
+		"client_secret":"99EF31656FBB386873CCF071E05BCC03876C5BDA73FF8E7C93040584452AB24C",
+		"app_id":"102201703",
+		"package_name":"com.h.huaweimappolyline",
+		"api_key":"CV7h64gkvTE7BQtP9yFt0VEZkb2jjNLK6YhdUKeouRWro1CvZfbv/bQ/7je3BL1vT1VimPlqAdf1l8Wp4NwnGmLRNFur"
+	},
+	"service":{
+		"analytics":{
+			"collector_url":"datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn",
+			"resource_id":"p1",
+			"channel_id":""
+		},
+		"cloudstorage":{
+			"storage_url":"https://agc-storage-dre.platform.dbankcloud.cn"
+		},
+		"ml":{
+			"mlservice_url":"ml-api-dre.ai.dbankcloud.com,ml-api-dre.ai.dbankcloud.cn"
+		}
+	},
+	"region":"DE",
+	"configuration_version":"1.0"
+}
