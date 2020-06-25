@@ -4,18 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Toast;
 
 import com.h.huaweimappolyline.models.polylineResponse.Paths;
 import com.h.huaweimappolyline.models.polylineResponse.Polyline;
 import com.h.huaweimappolyline.models.polylineResponse.PolylineResponse;
 import com.h.huaweimappolyline.models.polylineResponse.Routes;
 import com.h.huaweimappolyline.models.polylineResponse.Steps;
-import com.huawei.hms.maps.CameraUpdate;
 import com.huawei.hms.maps.CameraUpdateFactory;
 import com.huawei.hms.maps.HuaweiMap;
-import com.huawei.hms.maps.MapFragment;
 import com.huawei.hms.maps.MapView;
 import com.huawei.hms.maps.OnMapReadyCallback;
 import com.huawei.hms.maps.model.LatLng;
@@ -24,7 +20,6 @@ import com.huawei.hms.maps.model.MarkerOptions;
 import com.huawei.hms.maps.model.PolylineOptions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, MainActivityInterface {
@@ -35,13 +30,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public static final String TAG = "MapActivity";
     private Marker mMarker;
     private MainActivityPresenter presenter;
-    private com.huawei.hms.maps.model.Polyline polyline;
     private List<LatLng> latLngList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         presenter = new MainActivityPresenter(this, this);
         presenter.getPolylines();
 
@@ -107,6 +103,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     , Double.valueOf(polylines.get(i).getLng())));
         }
 
-
     }
+
 }
